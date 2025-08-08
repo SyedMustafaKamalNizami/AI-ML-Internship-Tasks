@@ -1,5 +1,6 @@
 # AI-ML-Internship-Tasks
 Task 1 
+
 Exploring and Visualizing a Simple Dataset
 
 Objective:
