@@ -1,5 +1,7 @@
 # AI-ML-Internship-Tasks
-Task 1 : Exploring and Visualizing a Simple Dataset
+Task 1 
+Exploring and Visualizing a Simple Dataset
+
 Objective:
 To explore, analyze, and visualize the Iris dataset in order to understand its structure, relationships between features, and patterns that can be useful for classification tasks.
 
