@@ -18,10 +18,10 @@ No machine learning model applied in this task — focused on data exploration a
 Key Results & Findings:
 
 
-Used pandas for data loading and exploration (.shape, .head(), .info(), .describe()).
+1) Used pandas for data loading and exploration (.shape, .head(), .info(), .describe()).
 
-Applied matplotlib and seaborn to create scatterplots, histograms, and boxplots.
+2) Applied matplotlib and seaborn to create scatterplots, histograms, and boxplots.
 
-Observed clear separation between species, especially in petal measurements.
+3) Observed clear separation between species, especially in petal measurements.
 
-Identified patterns that could be leveraged in classification models.
+4) Identified patterns that could be leveraged in classification models.
