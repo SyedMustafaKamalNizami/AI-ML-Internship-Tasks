@@ -33,6 +33,7 @@ Task 2
 Predicting House Prices using Regression
 
 Objective:
+
 To build a regression model that predicts median house prices based on housing features, applying feature engineering, feature scaling, and model evaluation techniques.
 
 Dataset Used:
