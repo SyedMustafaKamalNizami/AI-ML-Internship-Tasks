@@ -3,20 +3,20 @@ Task 1
 
 Exploring and Visualizing a Simple Dataset
 
-Objective:
+Objective
 
 
 To explore, analyze, and visualize the Iris dataset in order to understand its structure, relationships between features, and patterns that can be useful for classification tasks.
 
-Dataset Used:
+Dataset Used
 
 Iris dataset (150 samples, 4 features: sepal length, sepal width, petal length, petal width, and species).
 
-Models Applied:
+Models Applied
 
 No machine learning model applied in this task — focused on data exploration and visualization.
 
-Key Results & Findings:
+Key Results & Findings
 
 
 1) Used pandas for data loading and exploration (.shape, .head(), .info(), .describe()).
@@ -32,19 +32,19 @@ Task 2
 
 Predicting House Prices using Regression
 
-Objective:
+Objective
 
 To build a regression model that predicts median house prices based on housing features, applying feature engineering, feature scaling, and model evaluation techniques.
 
-Dataset Used:
+Dataset Used
 
-California Housing Dataset (includes features like total rooms, bedrooms, population, households, and proximity to ocean).
+California Housing Dataset (includes features like total rooms, bedrooms, population, households, proximity to ocean, coordinates etc).
 
-Models Applied:
+Models Applied
 
 Linear Regression (used to predict continuous house price values based on processed input features).
 
-Key Results & Findings:
+Key Results & Findings
 
 1) Cleaned dataset by removing missing values and log-transformed skewed features for normalization.
 
@@ -56,7 +56,7 @@ Key Results & Findings:
 
 5) Trained a linear regression model and evaluated it using MAE, RMSE, and R².
 
-6) Achieved good model performance and visualized actual vs. predicted prices, confirming the model's ability to learn meaningful patterns.
+6) visualized actual vs. predicted prices.
 
 
 
