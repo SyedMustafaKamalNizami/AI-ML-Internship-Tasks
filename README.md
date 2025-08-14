@@ -1,4 +1,5 @@
 # AI-ML-Internship-Tasks
+
 Task 1 
 
 Exploring and Visualizing a Simple Dataset
@@ -26,6 +27,7 @@ Key Results & Findings
 3) Observed clear separation between species, especially in petal measurements.
 
 4) Identified patterns that could be leveraged in classification models.
+
 
 
 Task 2
@@ -57,6 +59,7 @@ Key Results & Findings
 5) Trained a linear regression model and evaluated it using MAE, RMSE, and R².
 
 6) visualized actual vs. predicted prices.
+
 
 
 Task 3
