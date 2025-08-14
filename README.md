@@ -59,4 +59,33 @@ Key Results & Findings
 6) visualized actual vs. predicted prices.
 
 
+Task 3
+
+General Health Query Chatbot (Prompt Engineering Based) 
+
+Objective
+
+To create an AI-powered chatbot capable of answering safe, friendly, and general health-related questions. The chatbot processes user queries, sends them to an AI model via an API, and returns clear, helpful responses within the health domain.
+
+Dataset Used
+
+No static dataset was used. Instead, the chatbot utilized real-time responses from the DeepSeek R1 model accessed through the OpenRouter API. This allowed the chatbot to handle natural language health queries dynamically without storing or processing large datasets locally.
+
+Models Applied
+
+DeepSeek R1 (accessed via OpenRouter API) – A large language model used for generating health-related responses based on user input.
+
+
+Key Results & Findings
+
+
+1) Successfully answered various health-related queries with clear and friendly responses.
+
+2) Integrated Python’s requests library for sending HTTP POST requests to the API.
+
+3) Used environment variables to securely store the API key, following security best practices.
+
+4) Discovered that without content filtering, the chatbot could still answer unrelated topics (e.g., sports or celebrities), indicating a need for topic              restriction logic.
+
+5) Leveraging the API eliminated the need for local model hosting or training, making the solution lightweight and easy to deploy.
 
