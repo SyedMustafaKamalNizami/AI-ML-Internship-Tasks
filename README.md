@@ -88,7 +88,74 @@ Key Results & Findings
 
 3) Used environment variables to securely store the API key, following security best practices.
 
-4) Discovered that without content filtering, the chatbot could still answer unrelated topics (e.g., sports or celebrities), indicating a need for topic              restriction logic.
+Task 4
 
-5) Leveraging the API eliminated the need for local model hosting or training, making the solution lightweight and easy to deploy.
+News Title Classifier Using BERT
 
+Objective
+
+To fine-tune a transformer model (BERT) for classifying news headlines into predefined topic categories. The model learns to recognize patterns in text and categorize each headline into labels such as World, Sports, Business, and Sci/Tech.
+
+Dataset Used
+
+AG News Dataset (available on Hugging Face Datasets).
+
+Contains 120,000 training samples and 7,600 test samples across four categories:
+
+1) World
+
+2) Sports
+
+3) Business
+
+4) Science & Technology
+
+Methodology
+
+1) Data Preprocessing
+
+Loaded dataset using Hugging Face datasets library.
+
+Tokenized text with BertTokenizer (bert-base-uncased).
+
+Padded and truncated sequences to ensure uniform input length.
+
+2) Model Fine-tuning
+
+Used bert-base-uncased from Hugging Face Transformers.
+
+Added classification head on top of BERT.
+
+Fine-tuned using TrainingArguments with Adam optimizer and learning rate scheduling.
+
+3) Evaluation
+
+Evaluated performance using accuracy and F1-score.
+
+Compared predictions with true labels on the test set.
+
+4) Deployment
+
+Integrated model with Gradio for a simple web-based interface.
+
+Allowed users to input a news headline and instantly receive predicted category with confidence score.
+
+Models Applied
+
+BERT (bert-base-uncased)
+
+Pre-trained on large text corpus.
+
+Fine-tuned specifically for AG News classification.
+
+Key Results & Findings
+
+1) Achieved high accuracy and strong F1-scores across categories.
+
+2) Model correctly classified unseen news headlines into World, Sports, Business, and Sci/Tech.
+
+3) Deployment with Gradio provided real-time interaction with users.
+
+4) Observed occasional misclassification for headlines with ambiguous context (e.g., business vs. world politics).
+
+5) Demonstrated the effectiveness of transfer learning with BERT for text classification tasks.
