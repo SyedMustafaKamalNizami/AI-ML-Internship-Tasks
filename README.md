@@ -1,23 +1,23 @@
 # AI-ML-Internship-Tasks
 
-Task 1 
+# Task 1 
 
 Exploring and Visualizing a Simple Dataset
 
-Objective
+# Objective
 
 
 To explore, analyze, and visualize the Iris dataset in order to understand its structure, relationships between features, and patterns that can be useful for classification tasks.
 
-Dataset Used
+# Dataset Used
 
 Iris dataset (150 samples, 4 features: sepal length, sepal width, petal length, petal width, and species).
 
-Models Applied
+# Models Applied
 
 No machine learning model applied in this task — focused on data exploration and visualization.
 
-Key Results & Findings
+# Key Results & Findings
 
 
 1) Used pandas for data loading and exploration (.shape, .head(), .info(), .describe()).
@@ -30,23 +30,23 @@ Key Results & Findings
 
 
 
-Task 2
+# Task 2
 
 Predicting House Prices using Regression
 
-Objective
+# Objective
 
 To build a regression model that predicts median house prices based on housing features, applying feature engineering, feature scaling, and model evaluation techniques.
 
-Dataset Used
+# Dataset Used
 
 California Housing Dataset (includes features like total rooms, bedrooms, population, households, proximity to ocean, coordinates etc).
 
-Models Applied
+# Models Applied
 
 Linear Regression (used to predict continuous house price values based on processed input features).
 
-Key Results & Findings
+# Key Results & Findings
 
 1) Cleaned dataset by removing missing values and log-transformed skewed features for normalization.
 
@@ -62,24 +62,24 @@ Key Results & Findings
 
 
 
-Task 3
+# Task 3
 
 General Health Query Chatbot (Prompt Engineering Based) 
 
-Objective
+# Objective
 
 To create an AI-powered chatbot capable of answering safe, friendly, and general health-related questions. The chatbot processes user queries, sends them to an AI model via an API, and returns clear, helpful responses within the health domain.
 
-Dataset Used
+# Dataset Used
 
 No static dataset was used. Instead, the chatbot utilized real-time responses from the DeepSeek R1 model accessed through the OpenRouter API. This allowed the chatbot to handle natural language health queries dynamically without storing or processing large datasets locally.
 
-Models Applied
+# Models Applied
 
 DeepSeek R1 (accessed via OpenRouter API) – A large language model used for generating health-related responses based on user input.
 
 
-Key Results & Findings
+# Key Results & Findings
 
 
 1) Successfully answered various health-related queries with clear and friendly responses.
@@ -88,15 +88,15 @@ Key Results & Findings
 
 3) Used environment variables to securely store the API key, following security best practices.
 
-Task 4
+# Task 4
 
 News Title Classifier Using BERT
 
-Objective
+# Objective
 
 To fine-tune a transformer model (BERT) for classifying news headlines into predefined topic categories. The model learns to recognize patterns in text and categorize each headline into labels such as World, Sports, Business, and Sci/Tech.
 
-Dataset Used
+# Dataset Used
 
 AG News Dataset (available on Hugging Face Datasets).
 
@@ -110,7 +110,7 @@ Contains 120,000 training samples and 7,600 test samples across four categories:
 
 4) Science & Technology
 
-Methodology
+# Methodology
 
 1) Data Preprocessing
 
@@ -140,7 +140,7 @@ Integrated model with Gradio for a simple web-based interface.
 
 Allowed users to input a news headline and instantly receive predicted category with confidence score.
 
-Models Applied
+# Models Applied
 
 BERT (bert-base-uncased)
 
@@ -148,7 +148,7 @@ Pre-trained on large text corpus.
 
 Fine-tuned specifically for AG News classification.
 
-Key Results & Findings
+# Key Results & Findings
 
 1) Achieved high accuracy and strong F1-scores across categories.
 
@@ -159,3 +159,85 @@ Key Results & Findings
 4) Observed occasional misclassification for headlines with ambiguous context (e.g., business vs. world politics).
 
 5) Demonstrated the effectiveness of transfer learning with BERT for text classification tasks.
+
+
+
+# Task 5
+
+End-to-End ML Pipeline with Scikit-learn
+
+# Objective
+
+To build a reusable and production-ready machine learning pipeline for predicting customer churn. The project demonstrates automated preprocessing, model training, hyperparameter tuning, and pipeline export for deployment.
+
+# Dataset Used
+
+Telco Customer Churn Dataset
+
+Contains customer demographics, account details, service subscriptions, and churn labels (Yes/No).
+
+Target variable: Churn (1 = customer left, 0 = customer retained).
+
+# Methodology
+
+1) Data Preprocessing
+
+Converted TotalCharges to numeric values.
+
+Dropped irrelevant column customerID.
+
+Handled missing values.
+
+Applied preprocessing pipeline:
+
+Numerical features: imputation (median) + scaling with StandardScaler.
+
+Categorical features: imputation (constant) + OneHotEncoder.
+
+2) Model Training
+
+Built two models using Scikit-learn Pipelines:
+
+Logistic Regression
+
+Random Forest
+
+3) Hyperparameter Tuning
+
+Used GridSearchCV with 5-fold cross-validation.
+
+Optimized hyperparameters for both models.
+
+Scoring metric: F1-score (to balance precision and recall).
+
+4) Model Selection & Export
+
+Compared models based on F1-score and overall metrics.
+
+Selected Random Forest as the best model.
+
+Exported complete pipeline as telco_churn_pipeline.joblib for production use.
+
+# Models Applied
+
+1) Logistic Regression (baseline linear classifier).
+
+2) Random Forest (ensemble method, selected as final model).
+
+# Key Results & Findings
+
+1) Logistic Regression: Best F1 Score = 0.6069
+
+2) Random Forest: Best F1 Score = 0.6204
+
+3) Final Random Forest performance on test set:
+
+   Accuracy = 76.69%
+
+   F1 Score = 0.6204
+
+   ROC AUC = 0.8320
+
+4) Random Forest chosen as the final model for deployment.
+
+5) Complete ML pipeline saved for reuse in production systems.
