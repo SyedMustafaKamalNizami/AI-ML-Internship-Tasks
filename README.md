@@ -241,3 +241,66 @@ Exported complete pipeline as telco_churn_pipeline.joblib for production use.
 4) Random Forest chosen as the final model for deployment.
 
 5) Complete ML pipeline saved for reuse in production systems.
+
+
+# Task 6
+
+Auto-Tagging Support Tickets using LLMs 
+
+# Objective
+
+To build a text classification system for auto-tagging customer support tickets using Large Language Models (LLMs). The project demonstrates how zero-shot and few-shot prompting approaches can be applied for classification tasks without manual feature engineering.
+
+# Dataset Used
+
+Custom Support Ticket Dataset
+
+Contains customer queries related to:
+
+Billing Issue
+
+Login Problem
+
+Technical Error
+
+Account Management
+
+General Inquiry
+
+Target variable: Ticket Category (one of the five listed above).
+
+# Methodology
+
+Zero-Shot Classification
+
+1) Each ticket passed directly to the LLM with instructions to assign categories.
+
+2) Model returned top 3 ranked predictions with confidence-like scores.
+
+Few-Shot Classification
+
+1) Prompt engineered with labeled examples of tickets and their categories.
+
+2) New tickets classified with contextual guidance from examples.
+
+Evaluation
+
+1) Compared predictions against ground truth labels.
+
+2) Metrics used: Accuracy and Weighted F1 Score.
+
+# Models Applied
+
+Zero-Shot LLM Classification (no examples provided).
+
+Few-Shot LLM Classification (examples included in prompt).
+
+# Key Results & Findings
+
+1) Zero-Shot: Accuracy = 0.80, F1 Score = 0.73
+
+2) Few-Shot: Accuracy = 0.80, F1 Score = 0.80
+
+3) Few-shot approach achieved better balance between precision and recall.
+
+3) Difference in results was small due to the small custom dataset. A larger dataset would likely amplify performance differences and provide clearer insights.
